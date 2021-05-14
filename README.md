@@ -7,8 +7,8 @@ There is a bug that causes some games to add keyboard layout to the system which
 [About Apex Legends too](https://answers.ea.com/t5/Bug-Reports/Adds-English-US-keyboard-to-Windows/td-p/7444127)\
 ...and many more
 
-I was investigating the issue and found out that it happens with different games, so there are chances that the bug is in some Windows DLL, probably Windows GDI since it uses some keyboard-related functions form user32.dll, though I can not be sure.
-Since patching system libraries is hardly an option, I decided to try to remove unwanted keyboard layouts through winapi and it totally worked, so I made it into a program.
+I was investigating the issue and found out that it happens with different games based on Source, but I cannot be sure if there is a bug in engine or somewhere else.
+Since patching system or VAC-protected libraries is hardly an option, I decided to try to remove unwanted keyboard layouts through winapi and it totally worked, so I made it into a program.
 
 ## Usage
 **delang.exe**\
